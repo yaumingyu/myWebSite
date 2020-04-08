@@ -1,0 +1,34 @@
+{
+	"name": "my website",
+	"version": "0.0.1",
+	"author": "jayden",
+	"description": "第一个node.js程序",
+	"keywords": [
+		"node.js",
+		"javascript"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://path/to/url"
+	},
+	"license": "MIT",
+	"engines": {
+		"node": "0.10.x"
+	},
+	"bugs": {
+		"url": "http://path/to/bug",
+		"email": "bug@example.com"
+	},
+	"contributors": [
+		{
+			"name": "李四",
+			"email": "lisi@example.com"
+		}
+	],
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"puppeteer": "^2.1.1"
+	}
+}
