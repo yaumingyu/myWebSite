@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0036)http://vip.jiandazhou.com/js/pj.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>客户留言</title>
+
+  <!-- Main CSS -->
+
+  <style type="text/css">
+    body {
+      padding: 0;
+      margin: 0;
+      background: #fff;
+    }
+    .gbook-container {
+      border: 1px solid #ccc;
+      height: 600px;
+      overflow: auto;
+    }
+    /* .gbook-list */
+    .gbook-list {
+      height: 1190px;
+      border: 0;
+      padding: 0;
+    }
+    .gbook-list ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+      .gbook-list li {
+        position:relative;
+        border-bottom: 1px solid #E7E7E7;
+      }
+      .gbook-list li:last-child {
+        border-bottom: none;
+      }
+      .gbook-list li:nth-child(odd) {
+        background-color: #f8f8f8;
+      }
+      .gbook-list li .title {
+        padding: 15px 70px 0 55px;
+        min-height: 32px;
+      }
+        .gbook-list li .title .greey-head {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          display: block;
+          position: absolute;
+          top: 15px;
+          left: 15px;
+        }
+          .gbook-list li .title .man-head {
+            background: url(images/man-greey-head@2x.jpg) no-repeat center left;
+            background-size: 30px auto;
+          }
+          .gbook-list li .title .woman-head {
+            background: url(woimages/man-greey-head@2x.jpg) no-repeat center left;
+            background-size: 30px auto;
+          }
+        .gbook-list li .title .name {
+          font-size: 12px;
+          color: #333;
+          line-height: 30px;;
+        }
+        .gbook-list li .title .name .left {
+          font-family: Arial;
+          color: #333;
+        }
+        .gbook-list li .title .name .red-txt {
+          font-family: Arial;
+          color: #D22E06;
+        }
+        .gbook-list li .title .name .tel {
+          font-family: Arial;
+          color: #999;
+          padding-left: 10px;
+        }
+        .gbook-list .reply {
+          font-family: Arial;
+          font-size: 13px;
+          color: #666;
+          line-height: 15px;
+          padding: 10px 64px 12px 14px;
+        }
+      .gbook-list li .flower-pic {
+        font-family: Arial;
+        font-size: 13px;
+        color: #333;
+        padding-top: 40px;
+        text-align: center;
+        background: url(images/flower-pic.png) center 5px no-repeat;
+        background-size: 22px auto;
+        width: 50px;
+        position: absolute;
+        right: 12px;
+        top: 13px;
+      }
+
+    /* .page */
+    .page {
+      text-align: center;
+    }
+    .gbook-page {
+      padding-top: 15px;
+    }
+    .page a {
+      font-family: "Arial Black";
+      margin: 5px 2px;
+      text-decoration: none;
+      color: #898989;
+      border: 1px solid #e8e8e8;
+      height: 25px;
+      float: none;
+      font-size: 14px;
+      display: inline-block;
+      line-height: 25px;
+      padding-top: 0;
+      padding-right: 7px;
+      padding-left: 7px;
+    }
+    .page a:visited {
+      border: 1px solid #ccc;
+      color: #333;
+    }
+    .page a:hover {
+      border: 1px solid transparent;
+      color: #fff;
+      background: #898989;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+<body>
+<div class="gbook-container">
+  <div class="gbook-list">
+    <ul>
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">郑*平</span>
+            <span class="tel">158****1214</span>
+          </div>
+        </div>
+        <div class="reply">
+          客服很热情，资料很多很全面，还送我好多资料.祝老板生意兴隆。
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">尚*生</span>
+            <span class="tel">186****1002</span>
+          </div>
+        </div>
+        <div class="reply">
+          很好 发货快 是我想要的 找了很久了 不容易找到的，很实用的效果很好。
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">马*军</span>
+            <span class="tel">136****9593</span>
+          </div>
+        </div>
+        <div class="reply">
+          内容丰富，视频高清，正在学习中，价格不贵，满意，很值得，下次再来！
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">刘*敏</span>
+            <span class="tel">152****7261</span>
+          </div>
+        </div>
+        <div class="reply">
+          感谢卖家的努力付出，真好的教材。
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">马*伟</span>
+            <span class="tel">151****3328</span>
+          </div>
+        </div>
+        <div class="reply">
+          挺划算的，视屏清晰，文件很大，期待能在学习过程中，有所收货！
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">石*峰</span>
+            <span class="tel">156****9951</span>
+          </div>
+        </div>
+        <div class="reply">
+          很全，看了一部片子，很清晰。文件很大
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">毕*伟</span>
+            <span class="tel">189****5541</span>
+          </div>
+        </div>
+        <div class="reply">
+          超值，方便，实用，对我的技术提高帮助很大。卖家服务态度好。有问答。很满意。
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">林*万</span>
+            <span class="tel">182****4256</span>
+          </div>
+        </div>
+        <div class="reply">
+          好的不能太好了，比买书省的多
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">刘*萍</span>
+            <span class="tel">188****7754</span>
+          </div>
+        </div>
+        <div class="reply">
+          灰常不错，讲信用，发的也很快，谢谢了。
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">张*冰</span>
+            <span class="tel">188****7754</span>
+          </div>
+        </div>
+        <div class="reply">
+          找了好久终于找到了，价廉物美！
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">王*馨</span>
+            <span class="tel">177****6841</span>
+          </div>
+        </div>
+        <div class="reply">
+          好课件，讲得明白，资料齐全
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">于*海</span>
+            <span class="tel">136****2718</span>
+          </div>
+        </div>
+        <div class="reply">
+          太好了，光顾着看视频了，超值！1000分！good!
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head man-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">董*儒</span>
+            <span class="tel">152****3651</span>
+          </div>
+        </div>
+        <div class="reply">
+          已听十五课，确实是全实战的教材，内容非常全面，老师讲解的非常细致到位，说一套不可多得的视频宝典~
+        </div>
+      </li>
+      <!-- end li -->
+      <li>
+        <div class="flower-pic">已购买</div>
+        <div class="title">
+          <span class="greey-head woman-head"></span>
+          <div class="name">
+            <span class="left">客户：</span>
+            <span class="red-txt">曹*娜</span>
+            <span class="tel">188****7745</span>
+          </div>
+        </div>
+        <div class="reply">
+          讲义资料+配套视频，就像老师大学时期上课一样，非常棒！
+        </div>
+      </li>
+      <!-- end li -->
+    </ul>
+  </div>
+  <!-- end .gbook-list -->
+</div>
+<!-- end .gbook-container -->
+
+<div class="gbook-page">
+  <div class="page">
+    <a href="javascript:;">&lt;&lt;</a>
+    <a href="javascript:;" class="number current">1</a>
+    <a href="javascript:;" class="number">2</a>
+    <a href="javascript:;" class="number">3</a>
+    <a href="javascript:;" class="number">4</a>
+    <a href="javascript:;">&gt;&gt;</a>
+  </div>
+</div>
+<div class="clear"></div>
+
+<script language="VBScript"><!--
+
+//--></script></body></html>

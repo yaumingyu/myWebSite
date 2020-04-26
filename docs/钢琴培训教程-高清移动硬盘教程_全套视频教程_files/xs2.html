@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0037)http://vip.jiandazhou.com/js/xs2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title></title>
+<style type="text/css">
+body {
+    padding: 0;
+    margin: 0;
+    background: #ff5108;
+}
+.js {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+    text-align: center;
+    line-height: 45px;
+    margin: 0;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    padding: 25px 0;
+    text-shadow: 2px 1px 1px #333;
+}
+.js .br {
+    display: block;
+}
+.tt {
+    color: #ff0;
+    font-weight: bold;
+    font-size: 45px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.tt-time {
+    color: #ff0;
+    padding: 0 5px;
+}
+/* fix layout issue when smaller than 1024px width */
+@media (max-width: 900px) {
+    .js {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 13px 0;
+    }
+    .tt {
+        font-size: 25px;
+        padding: 0 5px;
+        display: inline-block;
+        margin-top: -3px;
+    }
+    .tt-time::after {
+        content: '';
+        display: block;
+    }
+}
+
+</style>
+</head>
+
+<body>
+<div class="js">
+    <span id="span_dt_sj01">2020年4月24-26</span>日限时仅<span class="tt">298</span>元<i class="br"></i>
+    结束还有:<span id="span_dt_dt" class="tt-time">6小时20分2秒</span> 已服务<span class="tt">83562</span>会员
+</div>
+
+<script language="javascript">
+//<!--
+function show_student_time(){
+
+var LSTR_ndate=new Date(); 
+var LSTR_Year=LSTR_ndate.getFullYear(); 
+var LSTR_Month=LSTR_ndate.getMonth()+1; 
+var LSTR_Date=LSTR_ndate.getDate(); 
+var be_Date=LSTR_ndate.getDate()-2; 
+var span_dt_sj01 = document.getElementById("span_dt_sj01")
+var span_dt_dt = document.getElementById("span_dt_dt")
+
+if (be_Date<=0){rizi='1日-'+LSTR_Date;if (LSTR_Date==1){rizi=LSTR_Date}}else{rizi=be_Date+'-'+LSTR_Date}
+span_dt_sj01.innerHTML=LSTR_Year+'年'+LSTR_Month+'月'+rizi
+
+window.setTimeout("show_student_time()", 1000);
+BirthDay=new Date(LSTR_Year,LSTR_Month-1,LSTR_Date+1);//改成你的计时日期
+today=new Date();
+timeold=(BirthDay.getTime()-today.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000 
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=Math.floor(e_hrsold);
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=Math.floor((e_hrsold-hrsold)*60);
+seconds=Math.floor((e_minsold-minsold)*60);
+
+span_dt_dt.innerHTML=hrsold+"小时"+minsold+"分"+seconds+"秒" ;
+
+}
+show_student_time();
+//-->
+</script>
+ 
+
+<script language="VBScript"><!--
+
+//--></script></body></html>
